@@ -1,0 +1,113 @@
+:root {
+    --primary-color: rgb(0, 0, 0);
+    /* cria uma tag personalizada, para usala, é so puxar */
+    --primary-color-dark: rgb(11, 30, 31);
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    /* ^cor de fundo^*/
+    font-family: 'Open sans', sans-serif;
+    /* ^fonte^ */
+    font-size: 1.3em;
+    /* ^tamanho da fonte^ */
+    line-height: 1.3em;
+    /* largura da linha*/
+}
+
+.container {
+    max-width: 640px;
+    /* tamanho maximo */
+    margin: 20px auto;
+    /* margem / distancia da borda da pagina */
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* arredondamento da borda da box */
+}
+
+form input,
+form label,
+form button {
+    display: block;
+    /* vai fazer com que cada caixa cubra a pagina toda c o espaço invisivel */
+    width: 100%;
+    /* altura */
+    margin-bottom: 10px;
+    /* aumenta/diminui a margem de baixo */
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    /* largura */
+    padding: 0 20px;
+
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+    /* para mudar a cor da linha quando selecionar a caixa */
+}
+
+form button {
+    border: none;
+    /* sem borda */
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    /* para mudar o cursor para a mãozinha */
+    margin-top: 30px;
+}
+
+form button:hover {
+    background: var(--primary-color-dark);
+}
+
+
+/* IMC */
+
+.top {
+    margin-top: 30px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    margin-top: 45px;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 15px;
+    margin-top: 15px;
+    line-height: 40px;
+}
+
+.bottom {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.paragrafo-resultado, .bad{
+    background: rgb(109, 175, 98);
+    padding: 10px 20px;
+}
+
+.bad {
+    background: rgb(239, 137, 137);
+}
